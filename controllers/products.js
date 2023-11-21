@@ -1,4 +1,4 @@
-const product = require('../models/products')  //guhamagara models kugirango tuyikoreshe
+const product = require('./models/products')  //guhamagara models kugirango tuyikoreshe
 
 const getAllproductsStatic = async (req, res) => {
 
@@ -14,7 +14,7 @@ const getAllproductsStatic = async (req, res) => {
 }
 
 const getAllproducts = async (req, res) => {
-  const { featured, company,number, name,rating,fields,sort} = req.query  
+  const { featured, company, name,rating,fields,sort} = req.query  
   const queryObject = {}
   queryObject.featured = featured === 'true' ? true : false
 

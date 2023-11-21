@@ -8,7 +8,7 @@ const productsRouter = require('./routes/products')
  const errorMiddleware = require('./middleware/error-handler')
 
 //middleware
-app.use(express.static('./public'));
+ app.use(express.static('./public'));
 app.use(express.json())
 //routes
 app.get('/', (req, res) => {
